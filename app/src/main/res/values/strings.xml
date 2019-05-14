@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Гиперборея</string>
+    <string-array name="jobs">
+        <item>Не работает</item>
+        <item>Строитель</item>
+        <item>Сборщик</item>
+        <item>Механик</item>
+        <item>Фермер</item>
+        <item>Курьер</item>
+        <item>Ученый</item>
+        <item>Министр</item>
+        <item>Охранник</item>
+        <item>Разработчик</item>
+        <item>Уборщик</item>
+        <item>Финансист</item>
+        <item>Торговец</item>
+    </string-array>
+
+    <!--
+Не работает -  0
+Строитель - 1
+Сборщик - 2
+Механик - 3
+Фермер - 4
+Курьер - 5
+Ученый - 6
+Министр - 7
+Охранник - 8
+Разработчик - 9
+Уборщик - 10
+Финансист - 11
+Торговец - 12
+ -->
+
+    <string-array name="product_types">
+        <item>Не выбрано</item>
+        <item>Еда</item>
+        <item>Ресурсы</item>
+        <item>Оборудование</item>
+        <item>Транспорт</item>
+    </string-array>
+
+    <string-array name="crops">
+        <item>Не выбрано</item>
+        <item>Огурцы</item>
+        <item>Картофель</item>
+        <item>Помидоры</item>
+        <item>Пшеница</item>
+        <item>Рожь</item>
+        <item>Лук</item>
+        <item>Морковь</item>
+        <item>Укроп</item>
+        <item>Свёкла</item>
+    </string-array>
+</resources>
+

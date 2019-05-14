@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".PersonCard">
+
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="textEnd"
+        android:textColor="@color/lightBlue"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/personMood"
+        app:layout_constraintTop_toBottomOf="@+id/personSurname"
+        tools:text="Иван" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="янв 2019" />
+
+        <TextView
+            android:id="@+id/moneyD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/moneyR"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="200 000 $" />
+
+        <TextView
+            android:id="@+id/moneyR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="200 000 ₽" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/personSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="textEnd"
+        android:textColor="@color/lightBlue"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/personMood"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:text="Иванов" />
+
+    <ImageView
+        android:id="@+id/personMood"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="person icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/person_icon" />
+
+    <Spinner
+        android:id="@+id/spinnerJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:popupBackground="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/personMood"
+        app:layout_constraintTop_toBottomOf="@+id/personAge" />
+
+    <TextView
+        android:id="@+id/skillsAndTraits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/lightBlue"
+        android:fontFamily="@font/roboto_light"
+        android:padding="8sp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personSalary"
+        tools:text="Навыки: \n навык1  +10% к тому-то\n навык2  +10% к тому-то\n навык3  +10% к тому-то\n\n  Черты характера: \n Черта1\n описание...\n ...........\n ...........\n\n  Черта2\n описание...\n ...........\n ...........\n\n  Черта3\n описание...\n ...........\n ...........\n\n  и т.д.\n " />
+
+    <TextView
+        android:id="@+id/personSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/lightBlue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/personMood"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerJobs"
+        tools:text="40,000 руб" />
+
+    <TextView
+        android:id="@+id/personAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/lightBlue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/personMood"
+        app:layout_constraintTop_toBottomOf="@+id/personName"
+        tools:text="35 лет" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.anastdronina.gyperborea">
+
+    <application
+        android:allowBackup="true"
+        android:label="Гиперборея"
+        android:icon="@mipmap/ic_launcher_new2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResetPreferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Popup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".People"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Finances"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sciense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tecnologies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellTechnology"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Supply"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Stock"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Agriculture"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FarmCard"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Market"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
